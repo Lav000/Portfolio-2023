@@ -10,6 +10,13 @@ body{
     letter-spacing: .1rem;
     background: var(--sucemarouge);
     color: var(--lacolortext);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+main{
+    max-width: 120rem;
+    margin: auto;
 }
 *{
     box-sizing: border-box;
@@ -30,6 +37,45 @@ button, input{
     border: 0;
 }
 :root{
-    --sucemarouge: #264bbacd;
+    --sucemarouge: #e0e5f2cd;
     --lacolortext: rgb(148, 34, 34);
+}
+
+/* THEME */
+
+/* TITRE */
+h1{
+    text-align: center;
+    text-shadow:
+    #101111 1px 1px 0,
+    #59bcf1 2px 2px 0,
+    #00ceff 3px 3px 0,
+    #006392 4px 4px 0,
+    #00485b 5px 5px 0,
+    #333 5px 5px 10px;color:#44e9ff;
+}
+/* LISTE */
+section ul.list-logo{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+section ul.list-logo li img{
+    width: 100%;
+    padding: 1rem;
+}
+
+section ul.list-logo li{
+    clip-path: circle(99%); /* masque */
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+section ul.list-logo li:hover{
+    clip-path: circle(40%);
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
 }
