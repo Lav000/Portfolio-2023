@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Grandiflora+One&family=Roboto:wght@100;300;400&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem 'Roboto', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    letter-spacing: .1rem;
+    background: var(--sucemarouge);
+    color: var(--lacolortext);
+}
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3,p,ul,ol{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+button, input{
+    padding: 0;
+    background-color: none;
+    border: 0;
+}
+:root{
+    --sucemarouge: #264bbacd;
+    --lacolortext: rgb(148, 34, 34);
+}
