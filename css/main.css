@@ -45,6 +45,7 @@ button, input{
 
 /* TITRE */
 h1{
+    font-size: 90px;
     text-align: center;
     text-shadow:
     #101111 1px 1px 0,
