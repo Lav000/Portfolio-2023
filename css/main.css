@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Grandiflora+One&family=Roboto:wght@100;300;400&display=swap');
 
+/* RESTE */
 html{
     font-size: 62.5%;
 }
@@ -8,8 +9,8 @@ body{
     margin: 0;
     line-height: 1.6;
     letter-spacing: .1rem;
-    background: var(--sucemarouge);
-    color: var(--lacolortext);
+    background: var(--lightbackgroundcolor);
+    color: var(--lightfontcolor);
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100vh;
@@ -39,9 +40,12 @@ button, input{
     vertical-align: middle;
 }
 :root{
-    --sucemarouge: #e0e5f2cd;
-    --lacolortext: rgb(148, 34, 34);
+    --lightbackgroundcolor: #e0e5f2cd;
+    --lightfontcolor: rgb(148, 34, 34);
 }
+
+
+
 
 /* THEME */
 
@@ -57,11 +61,30 @@ h1{
     #00485b 5px 5px 0,
     #333 5px 5px 10px;color:#44e9ff;
 }
+
+/* dark mode button */
 header button#toggle-dark-mode{
     font-size: 9rem;
     background-color: inherit;
-    
 }
+
+/* menu button */
+header button#toggle-menu{
+    background-color: inherit;
+    font-size: 9rem;
+}
+
+/* Menu */
+main section#menu{
+    z-index: 10;
+    position: fixed;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 10rem;
+    margin: auto;
+}
+
+
 /* LISTE */
 section ul.list-logo{
     display: grid;
@@ -83,7 +106,7 @@ section ul.list-logo li:hover{
     clip-path: circle(40%);
 }
 
-
+/* DARKMODE */
 /* Ajoutez ces styles pour le mode sombre */
 .dark-mode {
     background-color: rgb(51, 51, 51); /* Couleur de fond sombre */
