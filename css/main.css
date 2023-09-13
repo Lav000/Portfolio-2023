@@ -13,6 +13,7 @@ body{
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100vh;
+    transition: all .6s ease-in-out;
 }
 main{
     max-width: 120rem;
@@ -33,8 +34,9 @@ a{
 }
 button, input{
     padding: 0;
-    background-color: none;
+    background-color: 0;
     border: 0;
+    vertical-align: middle;
 }
 :root{
     --sucemarouge: #e0e5f2cd;
@@ -55,6 +57,11 @@ h1{
     #00485b 5px 5px 0,
     #333 5px 5px 10px;color:#44e9ff;
 }
+header button#toggle-dark-mode{
+    font-size: 9rem;
+    background-color: inherit;
+    
+}
 /* LISTE */
 section ul.list-logo{
     display: grid;
@@ -74,6 +81,25 @@ section ul.list-logo li{
 
 section ul.list-logo li:hover{
     clip-path: circle(40%);
+}
+
+
+/* Ajoutez ces styles pour le mode sombre */
+.dark-mode {
+    background-color: rgb(51, 51, 51); /* Couleur de fond sombre */
+    color: white; /* Couleur du texte en mode sombre */
+}
+
+.dark-mode h1 {
+    color: #44e9ff; /* Couleur du texte du titre en mode sombre */
+}
+
+.dark-mode section ul.list-logo li {
+    background-color: rgb(51, 51, 51); /* Fond des logos en mode sombre */
+}
+
+.dark-mode section ul.list-logo li img {
+    filter: invert(1); /* Inverser la couleur des images en mode sombre */
 }
 
 /* FOOTER */

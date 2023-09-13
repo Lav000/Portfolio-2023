@@ -11,11 +11,16 @@
     <link rel="manifest" href="favicon/site.webmanifest">
     <title>Portfolio</title>
 </head>
-<body>
+<body class="darkmode">
     <header>
         <h1>
-            Portfoliooo000OOO
+            Bienvenu <button id="toggle-dark-mode" aria-label="dark mode">
+                <span aria-hidden="true">
+                &#x1F31E;
+                </span>
+            </button>
         </h1>
+        
     </header>
     <main>
         <section>
@@ -23,8 +28,7 @@
                 Présentation
             </h2>
             <p>
-                Je suis IbraTV les commerces de pommes
-                et de mirabelle. Tu connais ?
+                Élève de BTS je me dirige vers les sommet de la programmation 
             </p>
         </section>
 
@@ -59,5 +63,12 @@
             &copy; - MIT - <Time datetime="2023-09-02">2023</Time>
         </p>
     </footer>
+    <script>// Sélectionnez le bouton pour activer/désactiver le mode sombre
+        const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
+        
+        // Ajoutez un gestionnaire d'événements pour basculer le mode sombre
+        toggleDarkModeButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });</script>
 </body>
 </html>
