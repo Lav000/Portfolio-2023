@@ -26,7 +26,8 @@ h1,h2,h3,p,ul,ol{
 }
 a{
     text-decoration: none;
-    color: black;
+    color: var(--lightfontcolor);
+    transition: color 0.5s;
 }
 button, input{
     padding: 0;
@@ -43,7 +44,7 @@ button, input{
 /* Header */
 header ul {
     display: flex;
-    margin: 0rem 5rem 0rem 53vh;
+    margin: 0rem 5rem 0rem 47vh;
 }
 
 header ul li{
@@ -70,14 +71,12 @@ main section p{
 .dark-mode {
     background-color: rgb(51, 51, 51); /* Couleur de fond sombre */
     color: white; /* Couleur du texte en mode sombre */
+    transition: all 0.5s;
 }
 
-.dark-mode h1 {
-    color: #44e9ff; /* Couleur du texte du titre en mode sombre */
-}
-
-.dark-mode section ul.list-logo li {
-    background-color: rgb(51, 51, 51); /* Fond des logos en mode sombre */
+.dark-mode li a{
+    color: white;
+    transition: color 0.5s;
 }
 
 .dark-mode section ul.list-logo li img {
@@ -90,3 +89,4 @@ header button#toggle-dark-mode{
     background-color: inherit;
     cursor: pointer;
 }
+
