@@ -13,31 +13,38 @@
 </head>
 <body class="darkmode">
     <header>
-        <h1>
-            Bienvenu 
-            <button id="toggle-dark-mode" aria-label="dark mode">
-                <span aria-hidden="true">
-                &#x1F31E;
-                </span>
-            </button>
-            <button id="toggle-menu" aria-label="toggle menu">
+
+        <button id="toggle-dark-mode" aria-label="dark mode">
+            <span id="vardarkmode" aria-hidden="true">
+            &#x1F31D;
+            </span>
+        </button>
+<!--             <button id="toggle-menu" aria-label="toggle menu">
                 <span aria-hidden="true">
                     &#8789;
                 </span>
-            </button>
-        </h1>
+            </button> -->
+
     </header>
     <main>
-        <section id="menu">
+        <section>
+            <h1>
+                Bienvenue
+            </h1>
+            <div>
+                <a href="./home.html">Entrer</a>
+            </div>
+        </section>
+<!--         <section id="menu">
             <ul>
                 <li><a href="/index.html">Accueil</a></li>
                 <li><a href="/index.html">Project</a></li>
                 <li><a href="/index.html">Association</a></li>
                 <li><a href="/index.html">Contact</a></li>
             </ul>
-        </section>
+        </section> -->
 
-        <section>
+<!--         <section>
             <h2>
                 Présentation
             </h2>
@@ -58,7 +65,7 @@
                 <li><img src="https://placehold.jp/3d4070/ffffff/150x150.png" alt="png basic" loading="lazy"></li>
                 <li><img src="https://placehold.jp/3d4070/ffffff/150x150.png" alt="" loading="lazy"></li>
             </ul>
-        </section>
+        </section> -->
 <!--         <div class="form" role="section" aria-roledescription="form">
             <fieldset id="form">
                 <legend>
@@ -77,12 +84,46 @@
             &copy; - MIT - <Time datetime="2023-09-02">2023</Time>
         </p>
     </footer>
-    <script>// Sélectionnez le bouton pour activer/désactiver le mode sombre
+<!--     <script>// Sélectionnez le bouton pour activer/désactiver le mode sombre
         const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
         
         // Ajoutez un gestionnaire d'événements pour basculer le mode sombre
         toggleDarkModeButton.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
-        });</script>
+        });</script> -->
+    <script>
+        //dark mode
+        const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
+
+        // Ajoutez un gestionnaire d'événements pour basculer le mode sombre
+        
+        let x = 0;
+
+        toggleDarkModeButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            if(x==0){
+                x = 1;
+                document.querySelector("span").innerHTML = "&#x1F31E;"
+                console.log(!x)
+            }
+            else{
+                x = 0;
+                document.querySelector("span").innerHTML = 	"&#x1F31D;"
+                console.log(x)
+            }
+          
+
+        });
+
+        /* var switchdarkmode = document.getElementById('vardarkmode');
+
+        console.log(switchdarkmode.innerHTML);
+        
+        if () {
+            switchdarkmode.innerHTML = '&#x1F31D;';
+        } */
+
+        console.log(switchdarkmode.innerHTML);
+    </script>
 </body>
 </html>
