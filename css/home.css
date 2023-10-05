@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Grandiflora+One&family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Grandiflora+One&family=Raleway:wght@300&family=Roboto:wght@100;300;400&display=swap');
+
+/* RESTE */
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem 'Roboto', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    letter-spacing: .1rem;
+    background: var(--lightbackgroundcolor);
+    color: var(--lightfontcolor);
+    transition: all .6s ease-in-out;
+}
+
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3,p,ul,ol{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+button, input{
+    padding: 0;
+    background-color: 0;
+    border: 0;
+    vertical-align: middle;
+}
+:root{
+    --lightbackgroundcolor: #e0e5f2cd;
+    --lightfontcolor: rgb(148, 34, 34);
+}
+
+/* Theme */
+
+header ul {
+    display: flex;
+    margin: 0rem 5rem 0rem 65vh;
+}
+
+header ul li{
+    padding: 3rem 2rem 0rem 2rem;
+}
