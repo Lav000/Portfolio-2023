@@ -40,12 +40,27 @@ button, input{
 }
 
 /* Theme */
-
+/* Header */
 header ul {
     display: flex;
-    margin: 0rem 5rem 0rem 65vh;
+    margin: 0rem 5rem 0rem 53vh;
 }
 
 header ul li{
-    padding: 3rem 2rem 0rem 2rem;
+    margin: 3rem 4rem 0rem 4rem;
+    cursor: pointer;
+}
+
+/* Main */
+main section{
+    text-align: center;
+    margin: 15rem 1rem 1rem 1rem;
+}
+
+main section img{
+    clip-path: circle(40%);
+}
+
+main section p{
+    margin: 1rem 20rem 1rem 20rem;
 }
