@@ -11,13 +11,18 @@
         <link rel="manifest" href="favicon/site.webmanifest">
         <title>Home</title>
     </head>
-    <body>
+    <body class="darkmode">
         <header>
             <ul>
                 <li><a href="./index.html">Accueil</a></li>
                 <li><a>À propos de moi</a></li>
                 <li><a>Compétences</a></li>
                 <li><a>Projets</a></li>
+                <button id="toggle-dark-mode" aria-label="dark mode">
+                    <span id="vardarkmode" aria-hidden="true">
+                    &#x1F31D;
+                    </span>
+                </button>
             </ul>
         </header>
         <main>
@@ -29,4 +34,26 @@
             </section>
         </main>
     </body>
+    <script>
+        //dark mode
+        const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
+
+        // Ajoutez un gestionnaire d'événements pour basculer le mode sombre
+        
+        let x = 0;
+
+        toggleDarkModeButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            if(x==0){
+                x = 1;
+                document.querySelector("span").innerHTML = "&#x1F31E;"
+                console.log(!x)
+            }
+            else{
+                x = 0;
+                document.querySelector("span").innerHTML = 	"&#x1F31D;"
+                console.log(x)
+            }
+        });
+    </script>
 </html>
