@@ -18,12 +18,6 @@
             &#x1F31D;
             </span>
         </button>
-<!--             <button id="toggle-menu" aria-label="toggle menu">
-                <span aria-hidden="true">
-                    &#8789;
-                </span>
-            </button> -->
-
     </header>
     <main>
         <section>
@@ -34,95 +28,13 @@
                 <a href="./home.html">Entrer</a>
             </div>
         </section>
-<!--         <section id="menu">
-            <ul>
-                <li><a href="/index.html">Accueil</a></li>
-                <li><a href="/index.html">Project</a></li>
-                <li><a href="/index.html">Association</a></li>
-                <li><a href="/index.html">Contact</a></li>
-            </ul>
-        </section> -->
-
-<!--         <section>
-            <h2>
-                Présentation
-            </h2>
-            <p>
-                Élève de BTS je me dirige vers les sommet de la programmation 
-            </p>
-        </section>
-
-        <section>
-            <h2>
-                Projets
-            </h2>
-            <ul class="list-logo">
-                <li><img src="https://placehold.jp/3d4070/ffffff/150x150.png" alt="logo apple" loading="lazy"></li>
-                <li><img src="https://placehold.jp/3d4070/ffffff/150x150.png" alt="logo payfit" loading="lazy"></li>
-                <li><img src="https://placehold.jp/3d4070/ffffff/150x150.png" alt="logo macron" loading="lazy"></li>
-                <li><img src="https://placehold.jp/3d4070/ffffff/150x150.png" alt="image de clou" loading="lazy"></li>
-                <li><img src="https://placehold.jp/3d4070/ffffff/150x150.png" alt="png basic" loading="lazy"></li>
-                <li><img src="https://placehold.jp/3d4070/ffffff/150x150.png" alt="" loading="lazy"></li>
-            </ul>
-        </section> -->
-<!--         <div class="form" role="section" aria-roledescription="form">
-            <fieldset id="form">
-                <legend>
-                    Rechercher ici
-                </legend>
-                <form action="https://www.google.com/search?" method="get">
-                    <label for="search">Rechercher sur le site</label>
-                    <input type="search" name="q" placeholder="Cherche batard" aria-required="true">
-                    <input type="submit" value="Cherche">
-                </form>
-            </fieldset>
-        </div> -->
     </main>
     <footer>
         <p>
             &copy; - MIT - <Time datetime="2023-09-02">2023</Time>
         </p>
     </footer>
-<!--     <script>// Sélectionnez le bouton pour activer/désactiver le mode sombre
-        const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
-        
-        // Ajoutez un gestionnaire d'événements pour basculer le mode sombre
-        toggleDarkModeButton.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-        });</script> -->
-    <script>
-        //dark mode
-        const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
-
-        // Ajoutez un gestionnaire d'événements pour basculer le mode sombre
-        
-        let x = 0;
-
-        toggleDarkModeButton.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            if(x==0){
-                x = 1;
-                document.querySelector("span").innerHTML = "&#x1F31E;"
-                console.log(!x)
-            }
-            else{
-                x = 0;
-                document.querySelector("span").innerHTML = 	"&#x1F31D;"
-                console.log(x)
-            }
-          
-
-        });
-
-        /* var switchdarkmode = document.getElementById('vardarkmode');
-
-        console.log(switchdarkmode.innerHTML);
-        
-        if () {
-            switchdarkmode.innerHTML = '&#x1F31D;';
-        } */
-
-        console.log(switchdarkmode.innerHTML);
+    <script src="js/app.js">
     </script>
 </body>
 </html>
