@@ -55,15 +55,20 @@ header ul li{
 /* Main */
 main section{
     text-align: center;
-    margin: 15rem 1rem 1rem 1rem;
+    margin: 2rem 1rem 1rem 1rem;
 }
 
 main section img{
     clip-path: circle(40%);
+    max-width: 10%;
+    padding: 0rem;
 }
 
+main section h1{
+    margin-top: -1rem;
+}
 main section p{
-    margin: 6rem 20rem 1rem 20rem;
+    margin: 4rem 20rem 1rem 20rem;
     text-align: justify;
 }
 

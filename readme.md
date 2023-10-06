@@ -28,4 +28,4 @@ Retrouvez-moi sur les réseaux sociaux :
 
 [![forthebadge](https://forthebadge.com/images/badges/validated-html5.svg)](https://forthebadge.com)
 
-© 2023 [Valentin Thomas]
+MIT 2023 [Valentin Thomas]
