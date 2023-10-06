@@ -8,7 +8,7 @@ Bienvenue sur mon portfolio en ligne ! Ce site a été créé pour présenter me
 Bienvenue sur mon portfolio !
 
 ### 2. Page d'Accueil
- Explorez mes compétences, découvrez mes projets et apprenez-en plus sur moi.
+Explorez mes compétences, découvrez mes projets et apprenez-en plus sur moi.
 
 ### 3. Section à Propos de Moi
 Une description de moi même accompagné d'une photo
@@ -18,10 +18,14 @@ La liste de mes compétences
 
 ### 5. Section Projets
 Une démo et listes de mes differents projets
+ 
 
 ## Contact
 Retrouvez-moi sur les réseaux sociaux :
 - [LinkedIn](https://www.linkedin.com/in/valentin-thomas1/)
 - [GitHub](https://github.com/Lav000)
+
+
+[![forthebadge](https://forthebadge.com/images/badges/validated-html5.svg)](https://forthebadge.com)
 
 © 2023 [Valentin Thomas]
