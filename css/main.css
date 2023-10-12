@@ -38,9 +38,15 @@ button, input{
     --lightbackgroundcolor: #e0e5f2cd;
     --lightfontcolor: rgb(148, 34, 34);
 }
+/* FIN RESET */
 
-/* THEME */
 
+
+
+/* THEME BIENVENUE*/
+.bienvenue-page{
+    display: block;
+}
 /* TITRE */
 header{
     text-align: right;
@@ -58,15 +64,6 @@ main section h1{
     margin-bottom: 8rem;
 }
 
-/* dark mode button */
-header button#toggle-dark-mode{
-    margin: 5rem;
-    font-size: 5rem;
-    background-color: inherit;
-    cursor: pointer;
-}
-
-
 section h1{
     margin: 1rem;
 }
@@ -76,7 +73,7 @@ main section div{
     text-align: center;
 }
 
-main section a{
+main section div button{
     background-color: antiquewhite;
     border-radius: 3rem;
     font-family: 'Raleway', sans-serif;
@@ -88,50 +85,59 @@ main section a{
     /* transition: box-shadow 0.5s; */
 }
 
-main section a:hover{
+main section div button:hover{
     border-radius: 1rem;
     box-shadow: 0px 3px 3px black;
     transition: all 0.5s;
     /* transition: box-shadow 0.5s; */
-    
 }
-/*  menu button 
-header button#toggle-menu{
-    background-color: inherit;
-    font-size: 9rem;
-}
-
-/* Menu 
-main section#menu{
-    z-index: 10;
-    position: fixed;
-    background-color: antiquewhite;
-    text-align: center;
-    padding: 10rem;
-    margin: auto;
-} */
+/* FIN THEME BIENVENUE*/
 
 
-/* LISTE 
-section ul.list-logo{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+
+
+
+/* THEME PAGE D'ACCUEIL */
+.accueil-page{
+    display: none;
 }
 
-section ul.list-logo li img{
-    width: 100%;
-    padding: 1rem;
+/* Header */
+header ul {
+    display: flex;
+    margin: 0rem 5rem 0rem 47vh;
 }
 
-section ul.list-logo li{
-    clip-path: circle(99%); /* masque 
-    transition: all .4s ease-in-out;
+header ul li{
+    margin: 3rem 4rem 0rem 4rem;
     cursor: pointer;
 }
 
-section ul.list-logo li:hover{
+/* Main */
+main section{
+    text-align: center;
+    margin: 2rem 1rem 1rem 1rem;
+}
+
+main section img{
     clip-path: circle(40%);
-} */
+    max-width: 10%;
+    padding: 0rem;
+}
+
+main section h1{
+    margin-top: -1rem;
+}
+main section p{
+    margin: 4rem 20rem 1rem 20rem;
+    text-align: justify;
+}
+/* FIN PAGE D'ACCUEIL */
+
+/* FOOTER */
+footer{
+    text-align: center;
+}
 
 /* DARKMODE */
 /* Ajoutez ces styles pour le mode sombre */
@@ -151,8 +157,19 @@ section ul.list-logo li:hover{
 .dark-mode section ul.list-logo li img {
     filter: invert(1); /* Inverser la couleur des images en mode sombre */
 }
+/* dark mode button */
+header button#toggle-dark-mode{
+    margin: 5rem;
+    font-size: 5rem;
+    background-color: inherit;
+    cursor: pointer;
+}
 
-/* FOOTER */
-footer{
-    text-align: center;
+
+/* TEST */
+.bienvenue-page{
+    transition: display 0.5s;
+}
+.accueil-page{
+    display: none;
 }

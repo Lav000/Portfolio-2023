@@ -22,4 +22,33 @@ document.addEventListener("DOMContentLoaded", e => {
             console.log(x);
         }
     });
+
+    // Page change
+
+    //Variables
+    const EnterButton = document.getElementById('Enter');
+    const BienvenuePage = document.querySelector(".bienvenue-page");
+    const AccueilPage = document.querySelectorAll(".accueil-page");
+    const AccueilButton = document.getElementById('li-accueil');
+
+    // Passer sur la page d'accueil
+    EnterButton.addEventListener('click', () => {
+
+        BienvenuePage.style.display = "none";
+
+        AccueilPage.forEach(function (page) {
+            page.style.display = "block";
+        });
+    });
+
+    //Passer sur la page d'accueil
+    AccueilButton.addEventListener('click', () => {
+        console.log('coucou');
+
+        AccueilPage.forEach(function (page) {
+            page.style.display = "none";
+        });
+
+        BienvenuePage.style.display = "block";
+    });
 });
