@@ -107,11 +107,14 @@ header .accueil-page ul {
 header .accueil-page ul li{
     margin: 3rem 4rem 0rem 4rem;
     cursor: pointer;
+    color: var(--lightfontcolor);
+    padding: 0.5rem;
+    transition: all 0.5s;
 }
 
 header .accueil-page ul li:hover {
     color: #f1e9c5;
-    text-shadow: 0px  0px 3px black;
+    text-shadow: 0px  0px 2px black;
     transition: all 0.3s;
 }
 /* Main */
