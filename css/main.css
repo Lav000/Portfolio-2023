@@ -41,39 +41,34 @@ button, input{
 /* FIN RESET */
 
 
-
+/* HEADER */
+header{
+    flex-direction: row-reverse;
+    display: flex;
+}
 
 /* THEME BIENVENUE*/
 .bienvenue-page{
     display: block;
 }
-/* TITRE */
-header{
-    text-align: right;
-}
 
-main{
-    margin-top: 11vh;
-    margin-bottom: 32vh;
-}
-
-main section h1{
+main .bienvenue-page h1{
     font-family: 'Raleway', sans-serif;
     font-size: 9rem;
     text-align: center;
     margin-bottom: 8rem;
 }
 
-section h1{
+.bienvenue-page h1{
     margin: 1rem;
 }
 
 /* Button "Entrer" */
-main section div{
+main .bienvenue-page div{
     text-align: center;
 }
 
-main section div button{
+main .bienvenue-page div button{
     background-color: antiquewhite;
     border-radius: 3rem;
     font-family: 'Raleway', sans-serif;
@@ -85,7 +80,7 @@ main section div button{
     /* transition: box-shadow 0.5s; */
 }
 
-main section div button:hover{
+main .bienvenue-page div button:hover{
     border-radius: 1rem;
     box-shadow: 0px 3px 3px black;
     transition: all 0.5s;
@@ -103,40 +98,46 @@ main section div button:hover{
 }
 
 /* Header */
-header ul {
+header .accueil-page ul {
     display: flex;
-    margin: 0rem 5rem 0rem 47vh;
+    margin-right: 40vh;
 }
 
-header ul li{
+header .accueil-page ul li{
     margin: 3rem 4rem 0rem 4rem;
     cursor: pointer;
 }
 
 /* Main */
-main section{
+main .accueil-page{
     text-align: center;
-    margin: 2rem 1rem 1rem 1rem;
+    margin: 7rem 1rem 1rem 1rem;
 }
 
-main section img{
+main .accueil-page img{
     clip-path: circle(40%);
     max-width: 10%;
     padding: 0rem;
 }
 
-main section h1{
-    margin-top: -1rem;
+main .accueil-page h1{
+    margin-top: -2rem;
+    font-size: 5.5rem;
+    margin-bottom: 5rem;
 }
-main section p{
-    margin: 4rem 20rem 1rem 20rem;
+main .accueil-page p{
+    margin: 1rem 20rem 1rem 20rem;
     text-align: justify;
 }
 /* FIN PAGE D'ACCUEIL */
 
 /* FOOTER */
 footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 /* DARKMODE */
@@ -159,7 +160,7 @@ footer{
 }
 /* dark mode button */
 header button#toggle-dark-mode{
-    margin: 5rem;
+    margin: 1.5rem 2rem 0rem 0rem;
     font-size: 5rem;
     background-color: inherit;
     cursor: pointer;
