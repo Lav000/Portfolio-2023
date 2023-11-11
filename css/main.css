@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Grandiflora+One&family=Roboto:wght@100;300;400&display=swap');
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Grandiflora+One&family=Raleway:wght@300&family=Roboto:wght@100;300;400&display=swap');
 
-/* RESTE */
-html{
+/* Reset */
+html {
     font-size: 62.5%;
 }
-body{
+
+body {
     font: 1.6rem 'Roboto', sans-serif;
     margin: 0;
     line-height: 1.6;
@@ -15,61 +16,63 @@ body{
     transition: all .6s ease-in-out;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
-h1,h2,h3,p,ul,ol{
+
+h1, h2, h3, p, ul, ol {
     padding: 0;
     margin: 0;
     list-style: none;
     font-weight: normal;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
-button, input{
+
+button, input {
     padding: 0;
     background-color: 0;
     border: 0;
     vertical-align: middle;
 }
-:root{
+
+:root {
     --lightbackgroundcolor: #e0e5f2cd;
     --lightfontcolor: rgb(148, 34, 34);
 }
-/* FIN RESET */
 
-
-/* HEADER */
-header{
+/* Header */
+header {
     flex-direction: row-reverse;
     display: flex;
 }
 
-/* THEME BIENVENUE*/
-.bienvenue-page{
+/* Welcome Theme */
+.bienvenue-page {
     display: block;
     margin-top: 15rem;
 }
 
-main .bienvenue-page h1{
+main .bienvenue-page h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 9rem;
     text-align: center;
     margin-bottom: 7rem;
 }
 
-.bienvenue-page h1{
+.bienvenue-page h1 {
     margin: 1rem;
 }
 
-/* Button "Entrer" */
-main .bienvenue-page div{
+/* "Enter" Button */
+main .bienvenue-page div {
     text-align: center;
 }
 
-main .bienvenue-page div button{
+main .bienvenue-page div button {
     background-color: antiquewhite;
     border-radius: 3rem;
     font-family: 'Raleway', sans-serif;
@@ -78,23 +81,18 @@ main .bienvenue-page div button{
     border: solid 1px black;
     box-shadow: 0px 0px 0px black;
     transition: all 0.5s;
-    /* transition: box-shadow 0.5s; */
 }
 
-main .bienvenue-page div button:hover{
+main .bienvenue-page div button:hover {
     border-radius: 1rem;
     box-shadow: 0px 3px 3px black;
     transition: all 0.5s;
-    /* transition: box-shadow 0.5s; */
 }
-/* FIN THEME BIENVENUE*/
 
+/* Welcome Theme End */
 
-
-
-
-/* THEME PAGE D'ACCUEIL */
-.accueil-page{
+/* Home Page Theme */
+.accueil-page {
     display: none;
 }
 
@@ -104,7 +102,7 @@ header .accueil-page ul {
     margin-right: 40vh;
 }
 
-header .accueil-page ul li{
+header .accueil-page ul li {
     margin: 3rem 4rem 0rem 4rem;
     cursor: pointer;
     color: var(--lightfontcolor);
@@ -114,34 +112,37 @@ header .accueil-page ul li{
 
 header .accueil-page ul li:hover {
     color: #f1e9c5;
-    text-shadow: 0px  0px 2px black;
+    text-shadow: 0px 0px 2px black;
     transition: all 0.3s;
 }
+
 /* Main */
-main .accueil-page{
+main .accueil-page {
     text-align: center;
     margin: 7rem 1rem 1rem 1rem;
 }
 
-main .accueil-page img{
+main .accueil-page img {
     clip-path: circle(40%);
     max-width: 10%;
     padding: 0rem;
 }
 
-main .accueil-page h1{
+main .accueil-page h1 {
     margin-top: -2rem;
     font-size: 5.5rem;
     margin-bottom: 5rem;
 }
-main .accueil-page p{
+
+main .accueil-page p {
     margin: 1rem 20rem 1rem 20rem;
     text-align: justify;
 }
-/* FIN PAGE D'ACCUEIL */
 
-/* FOOTER */
-footer{
+/* Home Page Theme End */
+
+/* Footer */
+footer {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -149,37 +150,37 @@ footer{
     margin-bottom: 1rem;
 }
 
-/* DARKMODE */
-/* Ajoutez ces styles pour le mode sombre */
+/* Dark Mode */
 .dark-mode {
-    background-color: rgb(51, 51, 51); /* Couleur de fond sombre */
-    color: white; /* Couleur du texte en mode sombre */
+    background-color: rgb(51, 51, 51);
+    color: white;
 }
 
 .dark-mode h1 {
-    color: #44e9ff; /* Couleur du texte du titre en mode sombre */
+    color: #44e9ff;
 }
 
 .dark-mode section ul.list-logo li {
-    background-color: rgb(51, 51, 51); /* Fond des logos en mode sombre */
+    background-color: rgb(51, 51, 51);
 }
 
 .dark-mode section ul.list-logo li img {
-    filter: invert(1); /* Inverser la couleur des images en mode sombre */
+    filter: invert(1);
 }
-/* dark mode button */
-header button#toggle-dark-mode{
+
+/* Dark Mode Button */
+header button#toggle-dark-mode {
     margin: 1.5rem 2rem 0rem 0rem;
     font-size: 5rem;
     background-color: inherit;
     cursor: pointer;
 }
 
-
-/* TEST */
-.bienvenue-page{
+/* Test */
+.bienvenue-page {
     transition: display 0.5s;
 }
-.accueil-page{
+
+.accueil-page {
     display: none;
 }
