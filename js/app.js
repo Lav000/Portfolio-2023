@@ -35,20 +35,41 @@ document.addEventListener("DOMContentLoaded", e => {
     EnterButton.addEventListener('click', () => {
 
         BienvenuePage.style.display = "none";
-
+        
         AccueilPage.forEach(function (page) {
+            
             page.style.display = "block";
+            page.style.opacity = "0";
+            // Set display to block after a delay to make sure the transition has time to start
+            setTimeout(() => {
+            // Set opacity on
+                page.style.opacity = "1";
+        
+                // Set transition property
+                page.style.transition = "opacity 0.5s";
+            }, 100);
         });
     });
 
-    //Passer sur la page d'accueil
+    //Passer sur la page d'bienvenue
     AccueilButton.addEventListener('click', () => {
-        console.log('coucou');
-
+        
         AccueilPage.forEach(function (page) {
-            page.style.display = "none";
-        });
+            page.style.opacity = "0";
+            // Set display to block after a delay to make sure the transition has time to start
+            setTimeout(() => {
+                page.style.display = "none";
+                BienvenuePage.style.display = "block";
+                // Set opacity on
+            }, 500);
 
-        BienvenuePage.style.display = "block";
-    });
+            setTimeout(() => {
+                // Set opacity on
+                page.style.opacity = "1";
+
+                // Set transition property
+                page.style.transition = "opacity 0.5s";
+            }, 600);
+        });
+    })
 });
