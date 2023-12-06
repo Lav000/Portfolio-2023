@@ -35,16 +35,16 @@ document.addEventListener("DOMContentLoaded", e => {
     EnterButton.addEventListener('click', () => {
 
         BienvenuePage.style.display = "none";
-
+        
         AccueilPage.forEach(function (page) {
-
+            
             page.style.display = "block";
             page.style.opacity = "0";
             // Set display to block after a delay to make sure the transition has time to start
             setTimeout(() => {
-                // Set opacity on
+            // Set opacity on
                 page.style.opacity = "1";
-
+        
                 // Set transition property
                 page.style.transition = "opacity 0.5s";
             }, 100);
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", e => {
 
     //Passer sur la page d'bienvenue
     AccueilButton.addEventListener('click', () => {
-
+        
         AccueilPage.forEach(function (page) {
             page.style.opacity = "0";
             // Set display to block after a delay to make sure the transition has time to start
@@ -71,5 +71,5 @@ document.addEventListener("DOMContentLoaded", e => {
                 page.style.transition = "opacity 0.5s";
             }, 600);
         });
-    });
+    })
 });
