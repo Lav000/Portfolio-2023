@@ -1,0 +1,38 @@
+/* Welcome Theme */
+.bienvenue-page {
+    display: block;
+    margin-top: 15rem;
+}
+
+main .bienvenue-page h1 {
+    text-align: center;
+    margin-bottom: 7rem;
+}
+
+.bienvenue-page h1 {
+    margin: 1rem;
+}
+
+/* "Enter" Button */
+main .bienvenue-page div {
+    text-align: center;
+}
+
+main .bienvenue-page div button {
+    background-color: antiquewhite;
+    border-radius: 3rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: solid 1px black;
+    box-shadow: 0px 0px 0px black;
+    transition: all 0.5s;
+}
+
+main .bienvenue-page div button:hover {
+    border-radius: 1rem;
+    box-shadow: 0px 3px 3px black;
+    transition: all 0.5s;
+}
+
+/* Welcome Theme End */

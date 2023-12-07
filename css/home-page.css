@@ -1,0 +1,61 @@
+/* Home Page */
+
+.accueil-page {
+    display: none;
+    opacity: 0;
+}
+
+/* Header */
+header .accueil-page ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+header .accueil-page ul li {
+    padding: 3vh;
+    margin: 0;
+    cursor: pointer;
+    color: var(--lightfontcolor);
+    transition: all 0.5s;
+}
+
+header .accueil-page ul li:hover {
+    color: #f1e9c5;
+    text-shadow: 0px 0px 2px black;
+    transition: all 0.3s;
+}
+
+/* Main */
+main .accueil-page {
+    text-align: center;
+    margin: 7rem 1rem 1rem 1rem;
+}
+
+main .accueil-page img {
+    clip-path: circle(40%);
+    max-width: 10%;
+    padding: 0rem;
+}
+
+main .accueil-page h2 {
+    margin-top: -2rem;
+    font-size: 5.5rem;
+    margin-bottom: 5rem;
+}
+
+main .accueil-page p {
+    margin: 1rem 20rem 1rem 20rem;
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}

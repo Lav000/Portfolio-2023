@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", e => {
     const AccueilPage = document.querySelectorAll(".accueil-page");
     const AccueilButton = document.getElementById('li-accueil');
 
-    // Passer sur la page d'accueil
+    //  Go To accueil
     EnterButton.addEventListener('click', () => {
 
         BienvenuePage.style.display = "none";
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", e => {
         });
     });
 
-    //Passer sur la page d'bienvenue
+    //Go to d'bienvenue
     AccueilButton.addEventListener('click', () => {
 
         AccueilPage.forEach(function (page) {
@@ -72,4 +72,13 @@ document.addEventListener("DOMContentLoaded", e => {
             }, 600);
         });
     });
+
+    //Pointer
+    const pointer = document.querySelector('.pointer');
+    const positionElement = e => {
+        const mouseY = e.clientY;
+        const mouseX = e.clientX;
+        pointer.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+    };
+    window.addEventListener('mousemove', positionElement);
 });
