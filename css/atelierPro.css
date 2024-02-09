@@ -16,23 +16,23 @@ p{
 }
 
 #c1, #c2, #c3{
-    width: 35%;
+    width: 20%;
     height: auto;
     transition: 0.3s;
 }
 
 #c1:hover{
-    width: 60%;
+    width: 30%;
     height: auto;
 }
 
 #c2:hover{
-    width: 45%;
+    width: 30%;
     height: auto;
 }
 
 #c3:hover{
-    width: 60%;
+    width: 30%;
     height: auto;
 }
 
