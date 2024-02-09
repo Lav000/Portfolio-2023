@@ -12,21 +12,25 @@
     <title>Projet java BTS</title>
 </head>
 <body>
-    <div>
-        <div>
+    <div class="container1">
+        <div class="presentation">
             <h2>Présentation</h2>
             <p>
                 Voici une courte présentation de notre application reposant sur une architecture en trois tiers. L'architecture logique du système est divisée en trois niveaux ou couches :<br>
-                couche de présentation ;<br>
-                couche de traitement ;<br>
-                couche d'accès aux données.<br>
-                C'est une architecture basée sur l'environnement client–serveur.<br>
-                L'application a pour fonction, la création de ligue, la création d'employé avec comme paramètre, un nom, un prenom, un email et un mot de passe.<br>
-                Les employées sont assignées à des ligues.
-
+                <ul>
+                    <li>Couche de présentation</li>
+                    <li>Couche de traitement</li>
+                    <li>Couche d'accès aux données</li>
+                </ul>
+                <br>
+                C'est une architecture basée sur l'environnement client-serveur. <br>
+                L'application a pour fonction : la création de ligue, la création d'employé avec comme paramètres un nom, un prénom, un email, un mot de passe, une date d'arrivée et une date de départ. <br>
+                Les employés sont assignés à des ligues. Chaque ligue possède un administrateur qui est de base le super-utilisateur (root), nous avons la possibilité de définir un employé comme administrateur de sa ligue. <br>
+                Un employé ne peut administrer qu'une ligue à la fois.
             </p>
         </div>
-        <div>
+        <hr>
+        <div class="objectif">
             <h2>Objectifs</h2>
             <p>
                 - Transformer l'application mono-utilisateur en une application multi-utilisateurs.<br>
@@ -34,6 +38,68 @@
                 - Conserver l'architecture 3-tiers de l'application.
             </p>
         </div>
+        <hr>
+        <div class="utilisation">
+            <h2>
+                Utilisation
+            </h2>
+            <h3>
+                Démarrage de l'application :
+            </h3>
+            <p>
+                Un mot de passe root est demandé au démarrage, le mot de passe est : toor
+            </p>
+            <img src="src/img/demarrageCapture.png" id="c1" alt="">
+            <h3>
+                Navigation dans l'application :
+            </h3>
+            <p>
+                Il est possible de naviguer dans l'app grace à des raccourcis directement proposé.
+            </p>
+            <img src="src/img/mainMenuCapture.png" alt="" id="c2">
+            <h3>
+                Fermeture de l'application :
+            </h3>
+            <p>
+                Lors de la fermeture il nous ai proposé soit d'enregistrer nos modification, soit de quitter sans enregistrer.
+            </p>
+            <img src="src/img/fermetureCapture.png" alt="" id="c3">
+        </div>
+        <div class="container style">
+            <div class="tree">
+              <div class="branch" style="--x:0">
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+              </div>
+              <div class="branch" style="--x:1">
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+              </div>
+              <div class="branch" style="--x:2">
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+              </div>
+              <div class="branch" style="--x:3">
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+              </div>
+              <div class="stem">
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+              </div>
+              <span class="shadow"></span>
+            </div>
+          </div>
     </div>
 </body>
 </html>
