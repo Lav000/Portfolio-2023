@@ -21,12 +21,12 @@ p{
     transition: 0.3s;
 }
 
-#c2:hover,#c3:hover,#c4:hover,#c5:hover{
+#c1:hover,#c3:hover,#c4:hover,#c5:hover{
     width: 30%;
     height: auto;
 }
 
-#c1:hover{
+#c2:hover{
     width: 100%;
     height: auto;
 }
