@@ -1,0 +1,13 @@
+body{
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+p:hover{
+    color: brown;
+}
+
+h2:hover{
+    font-size: 2rem;
+    padding: 8rem;
+}
