@@ -167,10 +167,46 @@ main .accueil-page { /* Block center */
     text-align: center;
     margin: 7rem 1rem 1rem 1rem;
 }
-main .accueil-page img { /* Image circle */
+main .accueil-page #personnal img { /* Image circle */
     clip-path: circle(40%);
     max-width: 10%;
     padding: 0rem;
+}
+
+/* Project */
+main #project{
+    margin-bottom: 10rem;
+}
+main #project .theme{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+main #project img{
+    height: 250px;
+    width: 150px;
+}
+
+main #project ul li{
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+main .theme ul{
+    display: none;
+}
+
+main .theme img:hover + ul {
+    display: flex;
 }
 
 /* Text */
@@ -183,7 +219,6 @@ main .accueil-page p {
 
 /* Footer */
 footer {
-    position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -223,4 +258,5 @@ header button#toggle-dark-mode {
     z-index: 9999;
     border: solid 2px black;
     box-shadow: 2px 2px 2px rgb(69, 69, 69);
+    position: fixed;
 }
