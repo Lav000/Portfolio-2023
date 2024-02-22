@@ -181,6 +181,8 @@ main #project .theme{
     border: 1px solid black;
     border-radius: 5px;
     display: flex;
+    margin-left: 20rem;
+    margin-right: 20rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
     flex-direction: row;
@@ -189,7 +191,7 @@ main #project .theme{
 
 main #project img{
     height: 250px;
-    width: 150px;
+    width: 165px;
 }
 
 main #project ul li{
